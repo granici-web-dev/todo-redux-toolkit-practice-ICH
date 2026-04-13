@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Todo App",
+  "version": "1.0",
+  "description": "My Todo List Extension",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": []
+}
