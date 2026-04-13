@@ -18,9 +18,15 @@ function TodoForm() {
       <TextField
         label="Enter new todo"
         sx={{ marginBottom: '12px' }}
+        value={title}
         onChange={(e) => setTitle(e.target.value)}
+        onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
       />
-      <Button variant="contained" color="success" size="large" onClick={handleSubmit}>
+      <Button
+        variant="contained"
+        color="success"
+        size="large"
+        onClick={handleSubmit}>
         Add Todo
       </Button>
     </FormGroup>
